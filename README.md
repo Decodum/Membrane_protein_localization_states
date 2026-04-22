@@ -58,17 +58,3 @@ Human Protein Atlas (Subcellular Section)
 | 4 | Signaling-remodeling membrane |
 
 
-
-## Reproducibility
-
-Run notebooks in order:
-
-1. `01_load_and_filter.ipynb`
-2. `02_clustering_analysis.ipynb`
-3. `03_cluster_interpretation.ipynb`
-4. `04_figures.ipynb`
-
-## Author
-
-Julia Larina  
-Computational biology / data science / biological systems analysis
