@@ -40,11 +40,6 @@ The pipeline performs the following steps:
 9. Summarize clusters at both observation and gene levels.
 10. Interpret clusters using:
 
-* localization enrichment,
-* representative marker genes,
-* gene-level cluster consistency,
-* antibody and cell line diversity checks,
-* functional annotation patterns.
 
 ## Main result
 
