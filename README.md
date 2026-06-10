@@ -69,7 +69,6 @@ Several tests were performed to assess whether the observed structure is meaning
 * clustering stability was evaluated using bootstrap Adjusted Rand Index;
 * gene-level summaries were used to reduce observation-level redundancy;
 * antibody distribution was inspected across clusters;
-* cell line diversity was examined to detect possible cell-line-specific artifacts;
 * biological coherence was assessed using known marker genes and functional annotation patterns.
 
 In the current analysis, the mean bootstrap ARI is approximately **0.89**, suggesting that the clustering structure is reproducible under resampling.
@@ -116,31 +115,17 @@ This project is exploratory and has several limitations:
 
 This project demonstrates how large-scale imaging resources can be used not only for supervised localization classification, but also for unsupervised discovery of structure within broad localization categories.
 
-From a bioinformatics perspective, it combines:
-
-* biological question formulation,
-* public omics/imaging data processing,
-* feature-based exploratory analysis,
-* dimensionality reduction,
-* unsupervised machine learning,
-* robustness checks,
-* gene-level aggregation,
-* biological interpretation of clusters.
 
 The project is designed as a portfolio-level demonstration of computational biology reasoning using real public data.
 
 ## Possible Future Improvements
 
-Several extensions could make the analysis stronger:
-
 * perform clustering only on raw image embedding features, excluding precomputed UMAP coordinates;
 * repeat the analysis at gene level as the primary clustering unit;
 * use a custom plasma membrane-associated gene background for functional enrichment;
 * compare KMeans with Leiden, HDBSCAN, or Gaussian mixture models;
-* quantify cell line and antibody effects using permutation tests or regression models;
 * validate selected clusters against external protein interaction or pathway databases;
 * inspect representative microscopy images for each cluster;
-* test whether the discovered states generalize across independent HPA releases.
 
 
 ## Requirements
@@ -155,9 +140,3 @@ The analysis uses Python and common scientific computing libraries, including:
 * seaborn
 * gprofiler-official
 
-A reproducible environment file can be added in a future version.
-
-## Project Status
-
-This is a completed exploratory analysis intended as a bioinformatics portfolio project.
-The current results support the presence of reproducible image-derived structure among plasma membrane-associated proteins, but the biological labels should be interpreted cautiously and treated as hypotheses for further validation.
