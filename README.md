@@ -111,7 +111,6 @@ This project is exploratory and has several limitations:
 This project demonstrates how large-scale imaging resources can be used not only for supervised localization classification, but also for unsupervised discovery of structure within broad localization categories.
 
 
-The project is designed as a portfolio-level demonstration of computational biology reasoning using real public data.
 
 ## Possible Future Improvements
 
